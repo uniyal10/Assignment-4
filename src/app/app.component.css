@@ -1,3 +1,5 @@
 .container{
   font-family: 'Courier New', Courier, monospace;
+  width:80%;
+  margin: auto;
 }
