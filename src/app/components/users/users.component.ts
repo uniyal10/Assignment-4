@@ -10,6 +10,7 @@ import { UserService } from "../../services/user.service"
 export class UsersComponent implements OnInit {
   users: User[]
   isEdit: boolean = false
+  isAdd: boolean = false
   userEdit: User[];
   constructor(private userService: UserService) { }
 
@@ -40,6 +41,7 @@ export class UsersComponent implements OnInit {
 
   cancelEvent() {
     this.isEdit = false
+    this.isAdd = false
   }
 
   saveEvent(user: any) {
@@ -66,5 +68,9 @@ export class UsersComponent implements OnInit {
 
     //update in  data base
     this.userService.saveUser(user).subscribe(msg => console.log(msg))
+  }
+
+  addEvent(user: any) {
+    this.userService.addUser(user).subscribe(msg => console.log(msg))
   }
 }

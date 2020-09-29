@@ -8,7 +8,8 @@ import { FooterComponent } from './layouts/footer/footer.component';
 import { UsersComponent } from './components/users/users.component';
 import { UserComponent } from './components/user/user.component';
 import { HttpClientModule } from "@angular/common/http";
-import { EditComponent } from './components/edit/edit.component'
+import { EditComponent } from './components/edit/edit.component';
+import { AddComponent } from './components/add/add.component'
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { EditComponent } from './components/edit/edit.component'
     FooterComponent,
     UsersComponent,
     UserComponent,
-    EditComponent
+    EditComponent,
+    AddComponent
   ],
   imports: [
     BrowserModule,

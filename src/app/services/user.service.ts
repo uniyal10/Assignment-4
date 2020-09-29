@@ -30,4 +30,8 @@ export class UserService {
     return this.http.post(url, JSON.stringify(user), httpOptions)
 
   }
+  addUser(user: any) {
+    const url: string = `http://localhost:5000/user/add`
+    return this.http.post(url, JSON.stringify(user), httpOptions)
+  }
 }
