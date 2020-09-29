@@ -38,11 +38,11 @@ export class EditComponent implements OnInit {
   onSave(id: number) {
     const user = {
       id: id,
-      firstName: this.firstName,
-      middleName: this.middleName,
-      lastName: this.lastName,
+      firstname: this.firstName,
+      middlename: this.middleName,
+      lastname: this.lastName,
       email: this.email,
-      phoneNumber: this.phoneNumber,
+      phonenumber: this.phoneNumber,
       role: this.role,
       address: this.address
     }

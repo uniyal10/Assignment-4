@@ -17,7 +17,6 @@ export class UsersComponent implements OnInit {
     this.userService.getUsers().subscribe(
       users => this.users = users
     )
-
   }
   editEvent(id: number) {
     this.isEdit = true
@@ -43,7 +42,7 @@ export class UsersComponent implements OnInit {
     this.isEdit = false
   }
 
-  saveEvent(user: User) {
+  saveEvent(user: any) {
 
     this.isEdit = false
 
@@ -53,11 +52,11 @@ export class UsersComponent implements OnInit {
 
     const obj: any = {
       id: id,
-      firstname: user.firstName,
-      middlename: user.middleName,
-      lastname: user.lastName,
+      firstname: user.firstname,
+      middlename: user.middlename,
+      lastname: user.lastname,
       email: user.email,
-      phonenumber: user.phoneNumber,
+      phonenumber: user.phonenumber,
       role: user.role,
       address: user.address
     }
